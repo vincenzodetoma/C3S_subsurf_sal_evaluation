@@ -15,9 +15,9 @@ var = ds[variable+'_trend_matrix'].squeeze().rename(variable+' trend '+r'$[PSU~{
 val=0.01
 colors='RdBu_r'
 if(section=='A3'):
-  xname = 'lat'
+  xname = 'longitude'
 else:
-  xname = 'lon'
+  xname = 'latitude'
 
 mask = xu.isnan(var)
 fig = plt.figure(1, figsize=(15,8))
